@@ -1,9 +1,0 @@
-# upgrade pip and install beautiful soup for web parsing
-
-import os
-
-os.system('pip3 install --upgrade pip')
-os.system('pip3 install beautifulsoup4')
-os.system('pip3 install lxml')
-
-from bs4 import BeautifulSoup
