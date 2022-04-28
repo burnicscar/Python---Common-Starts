@@ -13,23 +13,23 @@ import requests
 
 # set the url to perform the get request
 
-print ('Please enter URL link to parse: ')
-URL = input()
-page = requests.get(URL)
+print ('Please enter url link to parse: ')
+url = input()
+url_page = requests.get(url)
 
 # load the page content
 
-text = page.content
+page_text = url_page.content
 
 # make a soup object by using beautiful soup and set the markup as html parser
 
-soup = BeautifulSoup(text, "html.parser")
+pretty_text = BeautifulSoup(page_text, "html.parser")
 
 # open the file in w mode and set encoding to UTF-8
 
 with open("output.html", "w", encoding='utf-8') as file:
-    # prettify the soup object and convert it into a string
-    file.write(str(soup.prettify()))
+    # prettify the pretty_text object and convert it into a string
+    file.write(str(pretty_text.prettify()))
 
 # rename output file  to text after url deliminator 
 
