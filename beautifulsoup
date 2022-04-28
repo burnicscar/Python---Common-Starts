@@ -1,3 +1,5 @@
+# upgrade pip and install beautiful soup for web parsing
+
 import os
 
 os.system('pip3 install --upgrade pip')
