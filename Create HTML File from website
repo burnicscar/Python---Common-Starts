@@ -1,4 +1,3 @@
-# some code from https://www.geeksforgeeks.org/how-to-write-the-output-to-html-file-with-python-beautifulsoup/
 # import os to update pip and rename html file
 
 import os 
